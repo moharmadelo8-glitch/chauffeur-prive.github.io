@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr" dir="ltr" data-theme="dark">
 <head>
@@ -16,7 +15,7 @@
   "name": "Chauffeur Privé",
   "telephone": "+33635134496",
   "email": "chauffeur.taxi19@outlook.com",
-  "areaServed": "Paris",
+  "areaServed": ["Paris", "France", "Europe"],
   "priceRange": "€€€"
 }
 </script>
@@ -65,7 +64,7 @@
   .wrap{ max-width:1120px; margin:0 auto; padding:0 28px; }
   img,svg{ display:block; }
   .icon{ width:22px; height:22px; stroke:currentColor; fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
- 
+
   /* ---------- Header ---------- */
   header{
     position:sticky; top:0; z-index:50;
@@ -100,7 +99,7 @@
     padding:9px 16px; border-radius:999px; text-decoration:none; white-space:nowrap;
   }
   @media(min-width:760px){ .header-call{ display:inline-flex; } }
- 
+
   /* ---------- Hero ---------- */
   .hero{ position:relative; overflow:hidden; padding:76px 0 60px; }
   .hero-grid{ display:grid; grid-template-columns:1fr; gap:40px; align-items:center; position:relative; z-index:2;}
@@ -134,21 +133,21 @@
   .trust-row{ display:flex; flex-wrap:wrap; gap:26px; }
   .trust-item{ display:flex; align-items:center; gap:9px; color:var(--text-dim); font-size:.86rem; font-weight:600; }
   .trust-item .icon{ width:17px; height:17px; color:var(--gold); }
- 
+
   .hero-visual{ position:relative; aspect-ratio:4/5; display:flex; align-items:center; justify-content:center; }
   .arc-bg{ position:absolute; inset:0; width:100%; height:100%; }
   .car-mark{ position:relative; z-index:2; width:62%; color:var(--gold); }
   .hero-visual .ring{
     position:absolute; inset:8%; border:1px solid var(--line); border-radius:50%;
   }
- 
+
   /* ---------- Services ---------- */
   .section{ padding:78px 0; }
   .section-head{ max-width:640px; margin:0 auto 46px; text-align:center; }
   .section-head .eyebrow{ justify-content:center; }
   .section-head .eyebrow::before{ display:none; }
   .section-title{ font-family:var(--serif); font-weight:600; font-size:clamp(1.7rem,3.6vw,2.3rem); margin:0; }
- 
+
   .services-grid{ display:grid; grid-template-columns:1fr; gap:18px; }
   @media(min-width:640px){ .services-grid{ grid-template-columns:1fr 1fr; } }
   .service-card{
@@ -163,7 +162,7 @@
   }
   .service-card h3{ font-family:var(--serif); font-weight:600; font-size:1.08rem; margin:0 0 6px; }
   .service-card p{ margin:0; color:var(--text-dim); font-size:.92rem; }
- 
+
   /* ---------- Banner ---------- */
   .banner{
     background:linear-gradient(120deg, var(--surface-2), var(--surface));
@@ -173,7 +172,7 @@
   .banner-inner{ display:flex; align-items:center; justify-content:center; gap:14px; text-align:center; flex-wrap:wrap; }
   .banner .icon{ color:var(--gold); width:26px; height:26px; }
   .banner p{ margin:0; font-family:var(--serif); font-weight:600; font-size:clamp(1rem,2.4vw,1.3rem); }
- 
+
   /* ---------- Contact ---------- */
   .contact-grid{ display:grid; grid-template-columns:1fr; gap:16px; max-width:760px; margin:0 auto; }
   @media(min-width:700px){ .contact-grid{ grid-template-columns:repeat(3,1fr); } }
@@ -188,12 +187,12 @@
   .contact-card .value{ font-family:var(--serif); font-weight:600; font-size:1.1rem; }
   .contact-cta{ text-align:center; margin-top:40px; }
   .contact-cta .btn{ padding:16px 34px; font-size:1.02rem; }
- 
+
   /* ---------- Footer ---------- */
   footer{ border-top:1px solid var(--line); padding:30px 0; }
   .footer-inner{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; font-size:.82rem; color:var(--text-dim); }
   .footer-inner .brand{ font-size:.95rem; }
- 
+
   /* ---------- Mobile call bar ---------- */
   .mobile-call-bar{
     display:flex; align-items:center; justify-content:center; gap:10px;
@@ -205,10 +204,10 @@
   @media(min-width:760px){ .mobile-call-bar{ display:none; } }
   body{ padding-bottom:0; }
   @media(max-width:759px){ body{ padding-bottom:78px; } }
- 
+
   [dir="rtl"] .eyebrow::before{ order:2; }
   [dir="rtl"] .hero-desc{ margin-inline:0; }
- 
+
   @media (prefers-reduced-motion: reduce){
     html{ scroll-behavior:auto; }
     *{ transition:none !important; }
@@ -216,7 +215,7 @@
 </style>
 </head>
 <body>
- 
+
 <header>
   <div class="header-inner">
     <div class="brand"><span>CHAUFFEUR</span><span class="dot">•</span><span>PRIVÉ</span></div>
@@ -234,7 +233,7 @@
     </div>
   </div>
 </header>
- 
+
 <main>
   <section class="hero">
     <div class="wrap hero-grid">
@@ -242,7 +241,7 @@
         <div class="eyebrow" data-i18n="heroEyebrow">Service de chauffeur privé à Paris</div>
         <h1 class="wordmark">CHAUFFEUR PRIVÉ</h1>
         <p class="hero-subtitle" data-i18n="heroSubtitle">Tous aéroports · Toute destination</p>
-        <p class="hero-desc" data-i18n="heroDesc">Un service haut de gamme pour tous vos déplacements à Paris.</p>
+        <p class="hero-desc" data-i18n="heroDesc">Un service haut de gamme pour tous vos déplacements, à Paris comme partout en France et en Europe.</p>
         <div class="hero-actions">
           <a class="btn btn-primary ltr-num" href="tel:+33635134496">
             <svg class="icon" viewBox="0 0 24 24" style="width:18px;height:18px;"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 2c1 3 3 5 6 6l2-2 5 2v2c0 1-1 2-2 2C10 20 4 14 4 5Z"></path></svg>
@@ -259,7 +258,7 @@
           <div class="trust-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 4c-4 3-5 5-5 8a5 5 0 0 0 10 0c0-3-1-5-5-8Z"></path></svg><span data-i18n="trust3">Discrétion</span></div>
         </div>
       </div>
- 
+
       <div class="hero-visual" aria-hidden="true">
         <div class="ring"></div>
         <svg class="arc-bg" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid meet">
@@ -277,7 +276,7 @@
       </div>
     </div>
   </section>
- 
+
   <section class="section" id="services">
     <div class="wrap">
       <div class="section-head">
@@ -291,7 +290,7 @@
         </div>
         <div class="service-card">
           <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12Z"></path><circle cx="12" cy="9" r="2.4"></circle></svg></div>
-          <div><h3 data-i18n="s2Title">Toute destination</h3><p data-i18n="s2Desc">Partout dans Paris</p></div>
+          <div><h3 data-i18n="s2Title">Toute destination</h3><p data-i18n="s2Desc">France et Europe</p></div>
         </div>
         <div class="service-card">
           <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 20v-1c0-2.8 2.7-5 6-5s6 2.2 6 5v1"></path><circle cx="17.5" cy="9" r="2.4"></circle><path d="M15.6 14.2c2.6.4 4.4 2.2 4.4 4.3V20"></path></svg></div>
@@ -304,20 +303,20 @@
       </div>
     </div>
   </section>
- 
+
   <div class="banner">
     <div class="wrap banner-inner">
       <svg class="icon" viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.6l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9Z"></path></svg>
       <p data-i18n="bannerText">Un service haut de gamme pour tous vos déplacements</p>
     </div>
   </div>
- 
+
   <section class="section" id="contact">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow" data-i18n="contactEyebrow">Réservation</div>
         <h2 class="section-title" data-i18n="contactTitle">Contactez-nous</h2>
-        <p style="color:var(--text-dim); margin-top:12px;" data-i18n="contactDesc">Disponible pour vos trajets à Paris. Appelez ou écrivez-nous pour réserver.</p>
+        <p style="color:var(--text-dim); margin-top:12px;" data-i18n="contactDesc">Disponible pour vos trajets à Paris, partout en France et en Europe. Appelez ou écrivez-nous pour réserver.</p>
       </div>
       <div class="contact-grid">
         <a class="contact-card ltr-num" href="tel:+33635134496">
@@ -345,35 +344,35 @@
     </div>
   </section>
 </main>
- 
+
 <footer>
   <div class="wrap footer-inner">
     <div class="brand">CHAUFFEUR <span class="dot">•</span> PRIVÉ</div>
     <div>© 2026 Chauffeur Privé — Paris. <span data-i18n="footerRights">Tous droits réservés.</span></div>
   </div>
 </footer>
- 
+
 <a class="mobile-call-bar ltr-num" href="tel:+33635134496">
   <svg class="icon" viewBox="0 0 24 24" style="width:18px;height:18px;"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 2c1 3 3 5 6 6l2-2 5 2v2c0 1-1 2-2 2C10 20 4 14 4 5Z"></path></svg>
   <span data-i18n="ctaCall">Appeler maintenant</span>
 </a>
- 
+
 <script>
 const translations = {
   fr: {
     ctaCall:"Appeler maintenant", ctaEmail:"Écrire un e-mail",
     heroEyebrow:"Service de chauffeur privé à Paris",
     heroSubtitle:"Tous aéroports · Toute destination",
-    heroDesc:"Un service haut de gamme pour tous vos déplacements à Paris.",
+    heroDesc:"Un service haut de gamme pour tous vos déplacements, à Paris comme partout en France et en Europe.",
     trust1:"Ponctualité", trust2:"Confort", trust3:"Discrétion",
     servicesEyebrow:"Nos prestations", servicesTitle:"Des trajets pensés pour vous",
     s1Title:"Transferts vers tous les aéroports", s1Desc:"Paris – Orly, CDG, Beauvais et tous aéroports",
-    s2Title:"Toute destination", s2Desc:"Partout dans Paris",
+    s2Title:"Toute destination", s2Desc:"France et Europe",
     s3Title:"Déplacements individuels ou en groupe", s3Desc:"Sur réservation",
     s4Title:"Ponctualité – Confort – Discrétion", s4Desc:"Votre satisfaction, notre priorité",
     bannerText:"Un service haut de gamme pour tous vos déplacements",
     contactEyebrow:"Réservation", contactTitle:"Contactez-nous",
-    contactDesc:"Disponible pour vos trajets à Paris. Appelez ou écrivez-nous pour réserver.",
+    contactDesc:"Disponible pour vos trajets à Paris, partout en France et en Europe. Appelez ou écrivez-nous pour réserver.",
     phoneLabel:"Téléphone", emailLabel:"E-mail", locationLabel:"Zone desservie", locationValue:"Paris",
     footerRights:"Tous droits réservés.", themeAria:"Changer de thème", langAria:"Langue"
   },
@@ -381,16 +380,16 @@ const translations = {
     ctaCall:"Call now", ctaEmail:"Send an email",
     heroEyebrow:"Private chauffeur service in Paris",
     heroSubtitle:"All airports · Any destination",
-    heroDesc:"A premium service for all your journeys in Paris.",
+    heroDesc:"A premium service for all your journeys, in Paris and throughout France and Europe.",
     trust1:"Punctuality", trust2:"Comfort", trust3:"Discretion",
     servicesEyebrow:"Our services", servicesTitle:"Rides designed around you",
     s1Title:"Transfers to all airports", s1Desc:"Paris – Orly, CDG, Beauvais and all airports",
-    s2Title:"Any destination", s2Desc:"All around Paris",
+    s2Title:"Any destination", s2Desc:"France and Europe",
     s3Title:"Individual or group travel", s3Desc:"By reservation",
     s4Title:"Punctuality – Comfort – Discretion", s4Desc:"Your satisfaction, our priority",
     bannerText:"A premium service for all your journeys",
     contactEyebrow:"Booking", contactTitle:"Contact us",
-    contactDesc:"Available for rides in Paris. Call or write to book.",
+    contactDesc:"Available for rides in Paris and throughout France and Europe. Call or write to book.",
     phoneLabel:"Phone", emailLabel:"Email", locationLabel:"Service area", locationValue:"Paris",
     footerRights:"All rights reserved.", themeAria:"Toggle theme", langAria:"Language"
   },
@@ -398,16 +397,16 @@ const translations = {
     ctaCall:"Llamar ahora", ctaEmail:"Enviar un correo",
     heroEyebrow:"Servicio de chófer privado en París",
     heroSubtitle:"Todos los aeropuertos · Cualquier destino",
-    heroDesc:"Un servicio de alta gama para todos sus trayectos en París.",
+    heroDesc:"Un servicio de alta gama para todos sus trayectos, en París y en toda Francia y Europa.",
     trust1:"Puntualidad", trust2:"Confort", trust3:"Discreción",
     servicesEyebrow:"Nuestros servicios", servicesTitle:"Trayectos pensados para usted",
     s1Title:"Traslados a todos los aeropuertos", s1Desc:"París – Orly, CDG, Beauvais y todos los aeropuertos",
-    s2Title:"Cualquier destino", s2Desc:"Por todo París",
+    s2Title:"Cualquier destino", s2Desc:"Francia y Europa",
     s3Title:"Viajes individuales o en grupo", s3Desc:"Con reserva",
     s4Title:"Puntualidad – Confort – Discreción", s4Desc:"Su satisfacción, nuestra prioridad",
     bannerText:"Un servicio de alta gama para todos sus trayectos",
     contactEyebrow:"Reserva", contactTitle:"Contáctenos",
-    contactDesc:"Disponible para sus trayectos en París. Llame o escriba para reservar.",
+    contactDesc:"Disponible para sus trayectos en París y en toda Francia y Europa. Llame o escriba para reservar.",
     phoneLabel:"Teléfono", emailLabel:"Correo electrónico", locationLabel:"Zona de servicio", locationValue:"París",
     footerRights:"Todos los derechos reservados.", themeAria:"Cambiar tema", langAria:"Idioma"
   },
@@ -415,21 +414,21 @@ const translations = {
     ctaCall:"اتصل الآن", ctaEmail:"إرسال بريد إلكتروني",
     heroEyebrow:"خدمة سائق خاص في باريس",
     heroSubtitle:"جميع المطارات · أي وجهة",
-    heroDesc:"خدمة راقية لجميع تنقلاتكم في باريس.",
+    heroDesc:"خدمة راقية لجميع تنقلاتكم، في باريس وفي جميع أنحاء فرنسا وأوروبا.",
     trust1:"الالتزام بالمواعيد", trust2:"الراحة", trust3:"الكتمان",
     servicesEyebrow:"خدماتنا", servicesTitle:"رحلات مصممة خصيصًا لكم",
     s1Title:"نقل من وإلى جميع المطارات", s1Desc:"باريس – أورلي، شارل ديغول، بوفيه وجميع المطارات",
-    s2Title:"أي وجهة", s2Desc:"في جميع أنحاء باريس",
+    s2Title:"أي وجهة", s2Desc:"فرنسا وأوروبا",
     s3Title:"تنقلات فردية أو جماعية", s3Desc:"بالحجز المسبق",
     s4Title:"الالتزام بالمواعيد – الراحة – الكتمان", s4Desc:"رضاكم أولويتنا",
     bannerText:"خدمة راقية لجميع تنقلاتكم",
     contactEyebrow:"الحجز", contactTitle:"تواصل معنا",
-    contactDesc:"متاحون لرحلاتكم في باريس. اتصلوا أو راسلونا للحجز.",
+    contactDesc:"متاحون لرحلاتكم في باريس وفي جميع أنحاء فرنسا وأوروبا. اتصلوا أو راسلونا للحجز.",
     phoneLabel:"الهاتف", emailLabel:"البريد الإلكتروني", locationLabel:"منطقة الخدمة", locationValue:"باريس",
     footerRights:"جميع الحقوق محفوظة.", themeAria:"تبديل المظهر", langAria:"اللغة"
   }
 };
- 
+
 function applyLanguage(lang){
   const dict = translations[lang];
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -441,11 +440,11 @@ function applyLanguage(lang){
   document.getElementById('themeToggle').setAttribute('aria-label', dict.themeAria);
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
 }
- 
+
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
 });
- 
+
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 function setTheme(theme){
@@ -463,4 +462,3 @@ themeToggle.addEventListener('click', () => {
 </script>
 </body>
 </html>
- 
